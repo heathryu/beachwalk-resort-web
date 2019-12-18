@@ -1,7 +1,8 @@
 import React from 'react';
+import Hero from '../globals/Hero';
 
 const Header = () => {
-  return <div>Beachwalk Resort</div>;
+  return <Hero />;
 };
 
 export default Header;
