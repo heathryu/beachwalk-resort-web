@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import {
   setColor,
   setRem,
@@ -7,6 +7,29 @@ import {
   setBorder,
   media
 } from '../../styles';
+
+const fadeIn = (start, point, end, timeInSeconds = 3) => {
+  const animation = keyframes`
+    0% {
+      opacity: 0;
+      transform: translateY(${start})
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: translateY(${point})
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(${end})
+    }
+  `;
+
+  return css`
+    animation: ${animation} ${timeInSeconds}s ease-in-out;
+  `;
+};
 
 const Banner = ({ className, title, text, greeting, children }) => {
   return (
@@ -53,10 +76,10 @@ const BannerWrapper = styled(Banner)`
   `}
 
   h1 {
-    /* TODO: Add animation */
+    ${fadeIn('100%', '-10%', 0)}
   }
   .info {
-    /* TODO: Add animation */
+    ${fadeIn('-100%', '10%', 0)}
   }
 `;
 
