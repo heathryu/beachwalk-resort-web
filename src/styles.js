@@ -42,6 +42,14 @@ export const setBorder = ({
   return `border: ${width} ${style} ${color}`;
 };
 
+export const setTransition = ({
+  property = 'all',
+  time = '0.3s',
+  timing = 'ease-in-out'
+} = {}) => {
+  return `transition: ${property} ${time} ${timing}`;
+};
+
 const sizes = {
   large: 1200,
   desktop: 992,
