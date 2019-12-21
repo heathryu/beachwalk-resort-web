@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     line-height: 1.5;
-    margin: 0 0 1.5;
+    margin: 0 0 1.5rem;
   }
 `;
 export default GlobalStyles;
