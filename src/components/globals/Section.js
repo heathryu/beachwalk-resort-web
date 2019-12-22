@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { setRem } from '../../styles';
+import { setColor, setRem } from '../../styles';
 
 const Section = styled.section`
   padding: ${setRem(64)} 0;
-  background: ${props => props.color};
+  background: ${props => props.backgroundColor || setColor.mainWhite};
 `;
 
 export default Section;

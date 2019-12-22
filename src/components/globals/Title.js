@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { setRem, setFont, setLetterSpacing } from '../../styles';
 
-const Title = ({ className, title, center }) => {
+const Title = ({ className, title }) => {
   return <h3 className={className}>{title}</h3>;
 };
 

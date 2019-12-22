@@ -62,7 +62,8 @@ const AboutCenter = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-column-gap: ${setRem(32)};
     
-    .about-img {
+    .about-img,.about-info {
+      padding: 0
       align-self: center;
     }
     .about-info {
