@@ -55,7 +55,7 @@ const AboutCenter = styled.div`
     }
   }
 
-  ${media.desktop`
+  ${media.large`
     width: 100vw;
     max-width: ${setRem(1170)};
     display: grid;

@@ -24,8 +24,8 @@ const Room = ({
       <div className="room-info">
         <h4>{title}</h4>
         <p>{info}</p>
+        <SmallButton>More Info</SmallButton>
       </div>
-      <SmallButton>More Info</SmallButton>
     </article>
   );
 };
